@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Tic-Tac-Toe</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="pageTitle">Tic Tac Toe</header>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="modalIntro" id="modalIntro">
+
+    <div class="topWrap">
+
+      <div class="optionWrapper">
+        <div class="paddingWrapper">
+          <span>Player 1</span><br>
+          <div class="playerOneInputMargin">
+            <label for="playerName">Enter name:</label><br>
+            <input type="text" class="textBox" id="playerName1">
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="optionWrapper">
+
+        <div class="playerSelection">
+          <input type="radio" class="radioBtn" id="playerName2" name="choice2" value="player2">
+          <label for="player2">Player 2</label><br>
+          <label for="playerName" class="revealIfPressed">Enter name:</label>
+          <input type="text" class="textBox revealIfPressed" id="playerTwo">
+        </div>
+        
+        <div class="computerSelection">
+          <input type="radio" class="radioBtn" id="computer2" name="choice2" value="computer2">
+          <label for="computer2">Computer</label><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="buttonWrapper" id="generateGameWrapper">
+      <button class="gameButtonModal" id="gameButtonModal">Generate Game</button>
+    </div> 
+
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="contentWrapper">
+      <span class="winnerAnnounce" id="winnerAnnounce">Winner</span>
+      <button class="newGame" id="newGame">New Game</button>
+      <button class="newGame" id="newPlayers">New Players</button>
+    </div>
+  </div>
+
+  <div class="buttonWrapper">
+    <button class="gameButton" id="newGame">Reset</button>
+  </div>
+
+  <div class="scores">
+    <div class="score" id="player1Score">
+      <div class="playerName" id="player1NameDisplay"></div>
+      <div class="scoreNumber" id="player1ScoreDisplay"></div>
+    </div>
+    <div class="score" id="player2Score">
+      <div class="playerName" id="player2NameDisplay"></div>
+      <div class="scoreNumber" id="player2ScoreDisplay"></div>
+    </div>
+  </div>
+  
+  <div class="gameBoardWrapper">
+    <div id="gameBoard"></div>
+  </div>
+  
+</body>
+</html>
